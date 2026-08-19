@@ -16,13 +16,13 @@ const Footer = () => {
           <div className="text-center">
             <p className="text-sm text-gray-300 mb-2">تواصل معنا</p>
             <div className="flex justify-center md:justify-start space-x-4 space-x-reverse">
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" aria-label="Twitter">
                 <i className="fab fa-twitter text-xl"></i>
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" aria-label="Facebook">
                 <i className="fab fa-facebook text-xl"></i>
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" aria-label="Instagram">
                 <i className="fab fa-instagram text-xl"></i>
               </a>
             </div>
@@ -39,7 +39,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-600 mt-6 pt-6 text-center">
           <p className="text-xs text-gray-400">
-            تم التطوير بـ <i className="fas fa-heart text-red-500 mx-1"></i> للمسلمين حول العالم
+          mouad  تم التطوير بـ <i className="fas fa-heart text-red-500 mx-1"></i> للمسلمين حول العالم
           </p>
         </div>
       </div>
