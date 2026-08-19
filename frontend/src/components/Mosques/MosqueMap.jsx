@@ -8,8 +8,9 @@ const MosqueMap = () => {
   const [error, setError] = useState(null);
   const [radius, setRadius] = useState(5000);
 
-  useEffect(() => {
+    useEffect(() => {
     fetchNearbyMosques();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchNearbyMosques = async () => {
