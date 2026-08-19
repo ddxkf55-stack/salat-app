@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { weatherAPI } from '../services/api';
 import WeatherCard from '../components/Weather/WeatherCard';
-import WeatherAlerts from '../components/Weather/WeatherAlerts';
+// تم إزالة WeatherAlerts لأننا لم نعد نستخدمها
 
 const WeatherPage = () => {
   const [weather, setWeather] = useState(null);
