@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// استخدام متغير البيئة الخاص بـ Vercel، أو الرابط الافتراضي لـ Render كخيار احتياطي
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://salat-app.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -30,6 +31,12 @@ api.interceptors.response.use(
   },
   (error) => {
     console.error('Response Error:', error);
+    // تحسين معالجة الأخطاء لتسهيل التصحيح
+    if (error.response) {
+      console.error('Server responded with status:', error.response.status);
+    } else if (error.request) {
+      console.error('No response received from server. Check CORS or network.');
+    }
     return Promise.reject(error);
   }
 );
